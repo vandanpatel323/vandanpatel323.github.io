@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vandan Patel | Rutgers Business School Portfolio</title>
+    <meta name="description" content="Portfolio of Vandan Patel, Finance student at Rutgers Business School.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+                    colors: { scarlet: '#CC0033', ink: '#0b0b0f' }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+        a:focus-visible, button:focus-visible { outline: 3px solid #CC0033; outline-offset: 2px; }
+        @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    </style>
+</head>
+<body class="bg-white text-ink font-sans antialiased">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+            <a href="#top" class="flex items-center gap-3">
+                <span class="text-xl font-extrabold text-scarlet">RBS</span>
+                <span class="w-px h-5 bg-slate-300"></span>
+                <span class="font-semibold">Vandan's Portfolio</span>
+            </a>
+            <nav class="flex items-center gap-4 sm:gap-6 text-sm font-medium">
+                <a href="#about" class="hidden sm:inline hover:text-scarlet">About</a>
+                <a href="#skills" class="hidden sm:inline hover:text-scarlet">Skills</a>
+                <a href="#projects" class="hover:text-scarlet">Projects</a>
+                <a href="#experience" class="hidden sm:inline hover:text-scarlet">Experience</a>
+                <a href="Vandan_Patel_Resume.pdf" download class="bg-ink text-white rounded-full px-4 py-2 hover:bg-scarlet transition">Download Resume</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <!-- Hero / About -->
+        <section id="about" class="bg-slate-50 border-b border-slate-200">
+            <div class="max-w-6xl mx-auto px-5 py-16 md:py-24 grid md:grid-cols-[280px_1fr] gap-10 md:gap-16 items-center">
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-52 h-52 md:w-60 md:h-60 rounded-full border-4 border-white shadow-lg ring-1 ring-slate-200 overflow-hidden bg-scarlet flex items-center justify-center">
+                        <img src="headshot.jpg" alt="Headshot of Vandan Patel" class="w-full h-full object-cover"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span style="display:none" class="text-white text-6xl font-extrabold">VP</span>
+                    </div>
+                    <h2 class="mt-5 text-2xl font-bold">Vandan Patel</h2>
+                    <p class="text-scarlet font-semibold text-sm">Rutgers University&ndash;New Brunswick</p>
+                    <p class="text-slate-500 text-sm">B.S. Finance &middot; Expected May 2029</p>
+                </div>
+
+                <div>
+                    <span class="inline-block bg-red-50 text-scarlet text-xs font-semibold px-3 py-1 rounded-full border border-red-100">Finance &amp; Investment Banking</span>
+                    <h1 class="mt-5 text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">Finance student at Rutgers, building toward investment banking.</h1>
+
+                    <p class="mt-6 text-lg text-slate-600 leading-relaxed max-w-2xl">
+                        I am an undergraduate Finance student at Rutgers Business School with a 3.76 GPA and experience across investment banking, M&amp;A, and business development, building a strong foundation in financial analysis, valuation, and financial modeling.
+                    </p>
+
+                    <div class="mt-8 flex flex-wrap items-center gap-4">
+                        <a href="mailto:vandan.k.patel@rutgers.edu" class="bg-white border border-slate-300 rounded-full px-5 py-2.5 text-sm font-semibold hover:border-scarlet hover:text-scarlet transition shadow-sm">Email Me</a>
+                        <a href="https://www.linkedin.com/in/vandan-patel1/" target="_blank" rel="noopener" class="text-sm font-semibold hover:text-scarlet">LinkedIn Profile &rarr;</a>
+                    </div>
+
+                    <div class="mt-8 flex flex-wrap gap-x-8 gap-y-2 text-sm text-slate-600">
+                        <span><i class="fas fa-award text-scarlet mr-2"></i>3.76 GPA, Dean's List (All Semesters)</span>
+                        <span><i class="fas fa-trophy text-scarlet mr-2"></i>DECA State Finalist</span>
+                        <span><i class="fas fa-location-dot text-scarlet mr-2"></i>Middletown, NJ</span>
+                    </div>
+
+                    <p class="mt-6 text-sm text-slate-500 max-w-2xl">
+                        <span class="font-semibold text-slate-700">Relevant coursework:</span> Microeconomics, Macroeconomics, Business Calculus, Introduction to Statistics for Business
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+            <h2 class="text-3xl font-extrabold tracking-tight">Skills</h2>
+            <p class="mt-3 text-slate-600 max-w-2xl">Technical skills, tools, and organizations that support my work in finance and M&amp;A.</p>
+
+            <div class="mt-10 grid md:grid-cols-3 gap-6">
+                <div class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+                    <span class="inline-block text-xs font-bold tracking-wide bg-green-100 text-green-800 px-3 py-1 rounded-full">FINANCE</span>
+                    <h3 class="mt-4 text-lg font-bold">Financial &amp; M&amp;A Analysis</h3>
+                    <ul class="mt-3 space-y-2 text-sm text-slate-600">
+                        <li>Financial modeling and revenue forecasting</li>
+                        <li>DCF and comparable multiples valuation</li>
+                        <li>Buy-side target sourcing and screening</li>
+                        <li>Due diligence and M&amp;A auction processes</li>
+                        <li>Deal summaries and investment overviews</li>
+                    </ul>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+                    <span class="inline-block text-xs font-bold tracking-wide bg-blue-100 text-blue-800 px-3 py-1 rounded-full">TOOLS</span>
+                    <h3 class="mt-4 text-lg font-bold">Certifications &amp; Software</h3>
+                    <ul class="mt-3 space-y-2 text-sm text-slate-600">
+                        <li>Bloomberg Market Concepts (BMC)</li>
+                        <li>Excel Essential Training (Microsoft 365)</li>
+                        <li>CRM tools and outreach automation</li>
+                        <li>Market data and corporate dataset analysis</li>
+                    </ul>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+                    <span class="inline-block text-xs font-bold tracking-wide bg-red-100 text-scarlet px-3 py-1 rounded-full">LEADERSHIP</span>
+                    <h3 class="mt-4 text-lg font-bold">Activities &amp; Languages</h3>
+                    <ul class="mt-3 space-y-2 text-sm text-slate-600">
+                        <li>Little Investment Bankers of Rutgers (LIBOR)</li>
+                        <li>Finance Society</li>
+                        <li>BAPS Campus Fellowship</li>
+                        <li>Phi Sigma Kappa Fraternity</li>
+                        <li>Fluent in English, Gujarati, and Hindi</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="mt-8 text-sm text-slate-500"><span class="font-semibold text-slate-700">Interests:</span> Pizza tasting, fantasy football, Formula 1, exploring New York City, American history, and college football.</p>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="bg-slate-50 border-y border-slate-200">
+            <div class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+                <h2 class="text-3xl font-extrabold tracking-tight">Projects &amp; Certifications</h2>
+                <p class="mt-3 text-slate-600 max-w-2xl">Investment banking simulations and market training I completed. Download each certificate to verify.</p>
+
+                <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- J.P. Morgan -->
+                    <article class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 flex flex-col">
+                        <div class="flex items-center justify-between text-xs">
+                            <span class="font-bold tracking-wide bg-red-100 text-scarlet px-3 py-1 rounded-full">M&amp;A</span>
+                            <span class="text-slate-500">DCF &middot; Auction</span>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold leading-snug">J.P. Morgan Investment Banking Simulation</h3>
+                        <p class="mt-3 text-sm text-slate-600 leading-relaxed flex-1">
+                            Evaluated firms to identify an ideal M&amp;A target for a corporate client, built a DCF model, adjusted the valuation for supply chain disruptions and competitor bids, and wrote a 2-page executive summary with auction recommendations.
+                        </p>
+                        <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+                            <span class="text-slate-500">Forage &middot; Aug 2025</span>
+                            <a href="certificates/JP_Morgan_Forage.pdf" download class="font-semibold text-scarlet hover:underline">Download Certificate &darr;</a>
+                        </div>
+                    </article>
+
+                    <!-- UBS -->
+                    <article class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 flex flex-col">
+                        <div class="flex items-center justify-between text-xs">
+                            <span class="font-bold tracking-wide bg-green-100 text-green-800 px-3 py-1 rounded-full">VALUATION</span>
+                            <span class="text-slate-500">EV/EBITDA &middot; Multiples</span>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold leading-snug">AmplifyME x UBS M&amp;A Simulation</h3>
+                        <p class="mt-3 text-sm text-slate-600 leading-relaxed flex-1">
+                            Built revenue forecasts and valued Tesla using EV/EBITDA and revenue multiples for a buy-side acquisition assessment, then weighed competitive dynamics and operational synergies to make a final investment recommendation.
+                        </p>
+                        <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+                            <span class="text-slate-500">AmplifyME &middot; Nov 2025</span>
+                            <!-- Add a certificate link here when you have the PDF:
+                            <a href="certificates/AmplifyME_UBS.pdf" download class="font-semibold text-scarlet hover:underline">Download Certificate &darr;</a> -->
+                            <span class="font-semibold text-slate-700">Simulation complete</span>
+                        </div>
+                    </article>
+
+                    <!-- Bloomberg -->
+                    <article class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 flex flex-col">
+                        <div class="flex items-center justify-between text-xs">
+                            <span class="font-bold tracking-wide bg-blue-100 text-blue-800 px-3 py-1 rounded-full">MARKETS</span>
+                            <span class="text-slate-500">Bloomberg Terminal</span>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold leading-snug">Bloomberg Market Concepts (BMC)</h3>
+                        <p class="mt-3 text-sm text-slate-600 leading-relaxed flex-1">
+                            Completed Bloomberg's course on economic indicators, currencies, fixed income, and equity markets, using Terminal functions to analyze macro trends, yield curves, and corporate financial metrics.
+                        </p>
+                        <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+                            <span class="text-slate-500">Bloomberg for Education</span>
+                            <a href="certificates/Bloomberg_BMC.pdf" download class="font-semibold text-scarlet hover:underline">Download Certificate &darr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+            <h2 class="text-3xl font-extrabold tracking-tight">Work &amp; Leadership Experience</h2>
+            <p class="mt-3 text-slate-600 max-w-2xl">Professional background in investment banking, M&amp;A, business development, and community leadership.</p>
+
+            <div class="mt-10 max-w-3xl space-y-10">
+                <h3 class="text-sm font-bold tracking-wide text-slate-500">WORK EXPERIENCE</h3>
+
+                <div class="border-l-2 border-scarlet pl-6 relative">
+                    <span class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-scarlet"></span>
+                    <div class="flex flex-wrap justify-between gap-2">
+                        <h3 class="text-xl font-bold">Waterbrook Advisors</h3>
+                        <span class="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded">Dec 2025 &ndash; May 2026</span>
+                    </div>
+                    <p class="text-sm font-semibold text-scarlet mt-1">Investment Banking Spring Analyst &middot; Boise, ID</p>
+                    <ul class="mt-3 list-disc pl-5 text-sm text-slate-600 space-y-1.5">
+                        <li>Researched and screened lower-middle-market industrial companies as potential buy-side acquisition targets.</li>
+                        <li>Performed private equity research through target profiling and preliminary valuation using comparable multiples, and gained exposure to financial modeling.</li>
+                        <li>Supported due diligence and transaction preparation by assisting senior bankers with industry research, market trends, and strategic fit analysis.</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-2 border-slate-300 pl-6 relative">
+                    <span class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-slate-300"></span>
+                    <div class="flex flex-wrap justify-between gap-2">
+                        <h3 class="text-xl font-bold">Xyra Group</h3>
+                        <span class="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded">Dec 2025 &ndash; Apr 2026</span>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-600 mt-1">Spring Mergers &amp; Acquisitions Intern &middot; London, UK</p>
+                    <ul class="mt-3 list-disc pl-5 text-sm text-slate-600 space-y-1.5">
+                        <li>Sourced and screened off- and on-market TMT acquisition opportunities globally for potential strategic investments.</li>
+                        <li>Evaluated potential targets against acquisition criteria, business models, and strategic fit for growth potential.</li>
+                        <li>Prepared detailed deal summaries and investment overviews for internal M&amp;A review and strategic decisions.</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-2 border-slate-300 pl-6 relative">
+                    <span class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-slate-300"></span>
+                    <div class="flex flex-wrap justify-between gap-2">
+                        <h3 class="text-xl font-bold">Techsalerator</h3>
+                        <span class="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded">Sept 2025 &ndash; Dec 2025</span>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-600 mt-1">Fall Business Development Intern &middot; Fort Lauderdale, FL</p>
+                    <ul class="mt-3 list-disc pl-5 text-sm text-slate-600 space-y-1.5">
+                        <li>Conducted market and industry research in the global data sector, analyzing company profiles, use cases, and growth indicators to identify high-value acquisition and partnership targets.</li>
+                        <li>Analyzed and organized datasets of 200+ prospective companies, supporting deal origination by prioritizing targets aligned with strategic growth objectives.</li>
+                        <li>Ran outbound outreach to key decision-makers via email and CRM tools, supporting lead engagement, pipeline development, and early-stage business conversations.</li>
+                    </ul>
+                </div>
+
+                <h3 class="text-sm font-bold tracking-wide text-slate-500 pt-4">LEADERSHIP EXPERIENCE</h3>
+
+                <div class="border-l-2 border-scarlet pl-6 relative">
+                    <span class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-scarlet"></span>
+                    <div class="flex flex-wrap justify-between gap-2">
+                        <h3 class="text-xl font-bold">Phi Sigma Kappa Fraternity (Nu Tetarton Chapter)</h3>
+                        <span class="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded">Mar 2026 &ndash; Present</span>
+                    </div>
+                    <p class="text-sm font-semibold text-scarlet mt-1">Director of Compliance &amp; Risk Management &middot; New Brunswick, NJ</p>
+                    <ul class="mt-3 list-disc pl-5 text-sm text-slate-600 space-y-1.5">
+                        <li>Enforce national fraternity bylaws and Rutgers University policies across a 40-member chapter to promote safe and compliant operations.</li>
+                        <li>Develop and facilitate educational seminars on community accountability, emergency preparedness, and harm reduction practices.</li>
+                        <li>Collaborate with Rutgers Greek Life administrators and chapter leadership to conduct facility assessments and implement risk mitigation measures.</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-2 border-scarlet pl-6 relative">
+                    <span class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-scarlet"></span>
+                    <div class="flex flex-wrap justify-between gap-2">
+                        <h3 class="text-xl font-bold">BAPS Shri Swaminarayan Mandir</h3>
+                        <span class="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded">Sept 2021 &ndash; Present</span>
+                    </div>
+                    <p class="text-sm font-semibold text-scarlet mt-1">Youth Activities Coordinator &middot; Edison, NJ</p>
+                    <ul class="mt-3 list-disc pl-5 text-sm text-slate-600 space-y-1.5">
+                        <li>Lead and coordinate a diverse volunteer team to plan and deliver weekly cultural and spiritual assemblies.</li>
+                        <li>Design age-appropriate content that respectfully introduces Hindu traditions, values, and practices.</li>
+                        <li>Foster a respectful, engaging, and educational environment that promotes cultural pride and personal development.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-ink text-white">
+        <div class="max-w-6xl mx-auto px-5 py-12 text-center">
+            <p class="font-bold">Vandan Patel &middot; Rutgers Business School Student</p>
+            <p class="mt-2 text-sm text-slate-300">Connect with me for opportunities, questions, or coffee chats.</p>
+            <div class="mt-5 flex justify-center gap-6 text-sm text-slate-200">
+                <a href="https://www.linkedin.com/in/vandan-patel1/" target="_blank" rel="noopener" class="hover:text-white underline-offset-4 hover:underline">LinkedIn</a>
+                <a href="mailto:vandan.k.patel@rutgers.edu" class="hover:text-white underline-offset-4 hover:underline">Email</a>
+                <a href="Vandan_Patel_Resume.pdf" download class="hover:text-white underline-offset-4 hover:underline">Resume PDF</a>
+            </div>
+            <p class="mt-8 text-xs text-slate-400">&copy; 2026 Vandan Patel. Built with Tailwind CSS via CDN. Hosted on GitHub Pages.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
